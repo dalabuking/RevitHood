@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+
+  <AddIn Type="Application">
+    <Name>Application RevitHood</Name>
+    <Assembly>C:\ProgramData\Autodesk\ApplicationPlugins\RevitHood\RevitHood.dll</Assembly>
+    <FullClassName>RevitHood.App</FullClassName>
+    <ClientId>D5D81361-7A89-42A9-B7CC-3C486F35CC48</ClientId>
+    <VendorId>appa</VendorId>
+    <VendorDescription>Appa </VendorDescription>
+  </AddIn>
+</RevitAddIns>
+
