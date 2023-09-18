@@ -3,7 +3,7 @@ Revit Addons
 
 1. Color Each Element Of Model By Parameters Value
 2. Create New View With Section Box Of Selected Elemenets
-3. Element Selector (Select Element With Same Parameter Values)
+3. Element Selector (Select Element With Same Parameter Values) And Change Parameter Values
 5. Combine 2. and 3. addon , First Select Items with Parmeter Selector and Then Create Section Box Of Selected Elements
 
 
@@ -16,7 +16,8 @@ https://github.com/dalabuking/RevitHood/assets/55515683/6aec784e-08f1-4de9-8511-
 
 https://github.com/dalabuking/RevitHood/assets/55515683/4ac1c058-d80f-4ead-a1f9-9f9c1cdc78d1
 
-# Element Selector
+# Element Selector : 
+
 
 
 
