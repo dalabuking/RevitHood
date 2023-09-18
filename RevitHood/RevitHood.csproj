@@ -96,8 +96,16 @@
     <Compile Include="Functions\EditableParameters.cs" />
     <Compile Include="Commands\ColorCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\cl32.png" />
+    <None Include="Resources\para32.png" />
+    <None Include="Resources\bx32.png" />
     <Content Include="RevitHood.addin" />
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +120,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ParameterPicker.resx">
       <DependentUpon>ParameterPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

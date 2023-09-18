@@ -20,8 +20,8 @@ namespace RevitHood
     [Transaction(TransactionMode.Manual)]
     public class ChangeParametersCommand : IExternalCommand
     {
-      
-    
+
+
         ParameterPicker paraForm;
 
         EditableParameters parameters;
@@ -33,7 +33,7 @@ namespace RevitHood
           ref string message,
           ElementSet elements)
         {
-           
+
             UIApplication uiapp = commandData.Application;
             UIDocument uidoc = uiapp.ActiveUIDocument;
             Autodesk.Revit.ApplicationServices.Application app = uiapp.Application;
@@ -45,13 +45,14 @@ namespace RevitHood
             parameters.uniqueParaList.Sort();
 
 
-            while (isParameter) {
+            while (isParameter)
+            {
                 paraForm = new ParameterPicker(uiapp, parameters.uniqueParaList);
                 paraForm.ShowDialog();
                 if (paraForm.isParameterPicked)
                 {
-              
-                  changeParameter = new RevitHood.ChangeParameterForm(uiapp, paraForm.pickedParameter);
+
+                    changeParameter = new RevitHood.ChangeParameterForm(uiapp, paraForm.pickedParameter);
 
                     changeParameter.ShowDialog();
 
@@ -61,10 +62,10 @@ namespace RevitHood
                     isParameter = false;
                 }
             }
-        
-           
-          
-      
+
+
+
+
 
             return Result.Succeeded;
         }

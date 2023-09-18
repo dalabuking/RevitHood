@@ -27,7 +27,7 @@ namespace RevitHood
     {
 
 
-      
+
         Document doc;
         UIDocument uidoc;
         SelectionBoxForm fm;
@@ -36,7 +36,7 @@ namespace RevitHood
           ref string message,
           ElementSet elements)
         {
- 
+
             UIApplication uiapp = commandData.Application;
             this.uidoc = uiapp.ActiveUIDocument;
             Autodesk.Revit.ApplicationServices.Application app = uiapp.Application;
@@ -49,16 +49,7 @@ namespace RevitHood
             {
                 return Result.Failed;
             }
-            else
-            {
-               
-                foreach (ElementId id in selectedIds)
-                {
-                    
-                }
 
-             
-            }
 
             this.fm = new SelectionBoxForm();
 
@@ -68,8 +59,8 @@ namespace RevitHood
             {
                 return Result.Failed;
             }
-            View3D view3D; 
-        
+            View3D view3D;
+
             var direction = new XYZ(-1, 1, -1);
             var collector = new FilteredElementCollector(doc);
             var viewFamilyType = collector.OfClass(typeof(ViewFamilyType)).Cast<ViewFamilyType>()
@@ -138,9 +129,9 @@ namespace RevitHood
             double minZFinal = BoundsZ.Min();
             double maxZFinal = BoundsZ.Max();
 
-          
 
-            XYZ  xyzMax  = new XYZ(maxXFinal, maxYFinal , maxZFinal);
+
+            XYZ xyzMax = new XYZ(maxXFinal, maxYFinal, maxZFinal);
             XYZ xyzMin = new XYZ(minXFinal, minYFinal, minZFinal);
 
             BoundingBoxXYZ xyzBox = new BoundingBoxXYZ();
